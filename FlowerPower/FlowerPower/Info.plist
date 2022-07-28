@@ -26,5 +26,7 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need your current location in order to display the distance to destination</string>
 </dict>
 </plist>

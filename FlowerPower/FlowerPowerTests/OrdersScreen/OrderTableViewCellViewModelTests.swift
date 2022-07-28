@@ -21,7 +21,7 @@ class OrderTableViewCellViewModelTests: XCTestCase {
     func testInformationIsCorrect() throws {
         XCTAssertEqual(viewModel?.description, "description")
         XCTAssertEqual(viewModel?.imageIdentifier, mockedOrder.id)
-        XCTAssertEqual(viewModel?.status, "New")
+        XCTAssertEqual(viewModel?.status, "New order")
         XCTAssertEqual(viewModel?.price, "20 $")
     }
 

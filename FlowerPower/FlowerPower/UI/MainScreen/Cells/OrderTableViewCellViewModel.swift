@@ -11,8 +11,8 @@ import UIKit
 final class OrderTableViewCellViewModel {
     
     var description: String { order.description }
-    var status: String { createOrderStatus() }
-    var statusColor: UIColor { createStatusColor() }
+    var status: String { order.status.fullStringValue() }
+    var statusColor: UIColor { order.status.color() }
     var price: String { String(format: "%.f $", order.price) }
     let defaultImage: UIImage = RandomImageProvider.makeImage()
     var imageIdentifier: String { order.id }
@@ -21,29 +21,6 @@ final class OrderTableViewCellViewModel {
     
     init(order: Order) {
         self.order = order
-    }
-    
-    // MARK: Private methods
-    private func createOrderStatus() -> String {
-        switch order.status {
-        case .new:
-            return "New"
-        case .pending:
-            return "In progress"
-        case .delivered:
-            return "Order delivered"
-        }
-    }
-    
-    private func createStatusColor() -> UIColor {
-        switch order.status {
-        case .new:
-            return .blue
-        case .pending:
-            return .orange
-        case .delivered:
-            return .green
-        }
     }
     
 }

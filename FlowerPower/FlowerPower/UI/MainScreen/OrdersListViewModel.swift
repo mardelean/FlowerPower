@@ -15,6 +15,7 @@ final class OrdersListViewModel {
     var onFinishLoading: (() -> Void)?
     var onShowError: ((_ errorMessage: String) -> Void)?
     var onOrdersReceived: (() -> Void)?
+    var onShowOrderDetails: ((_ order: Order) -> Void)?
     
     private let ordersService: OrdersServiceType
     private let imageDownloader: ImageDownloaderType
@@ -64,5 +65,21 @@ final class OrdersListViewModel {
                 break
             }
         }
+    }
+    
+    func didSelectOrder(at index: Int) {
+        guard let orders = orders,
+              index < orders.count else {
+            return
+        }
+        let selectedOrder = orders[index]
+        onShowOrderDetails?(selectedOrder)
+    }
+    
+    func didUpdateOrder(order: Order) {
+        guard let index = orders?.firstIndex(where: { $0.id == order.id }) else {
+            return
+        }
+        orders?[index] = order
     }
 }

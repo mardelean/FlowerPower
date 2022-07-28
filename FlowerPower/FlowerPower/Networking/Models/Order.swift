@@ -7,12 +7,6 @@
 
 import Foundation
 
-enum OrderStatus: String, Codable {
-    case `new`
-    case pending
-    case delivered
-}
-
 struct Order: Codable {
     let id: String
     let description: String

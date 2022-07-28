@@ -9,6 +9,7 @@ import Foundation
 
 enum APIPath: String {
     case orders
+    case customers
 }
 
 enum HTTPMethod: String {
