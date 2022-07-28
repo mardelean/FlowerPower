@@ -50,6 +50,12 @@ class OrdersListViewController: UIViewController {
                 self?.tableView.reloadData()
             }
         }
+        
+        viewModel.onShowOrderDetails = { [weak self] order in
+            DispatchQueue.main.async {
+                self?.pushToOrderDetails(order: order)
+            }
+        }
     }
     
     private func setupUI() {
@@ -87,8 +93,15 @@ class OrdersListViewController: UIViewController {
         alertController.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
         present(alertController, animated: true)
     }
+    
+    private func pushToOrderDetails(order: Order) {
+        let orderDetailsViewModel = OrderDetailsViewModel(order: order, delegate: self)
+        let orderDetailsViewController = OrderDetailsViewController(viewModel: orderDetailsViewModel)
+        navigationController?.pushViewController(orderDetailsViewController, animated: true)
+    }
 }
 
+// MARK: UITableViewDataSource
 extension OrdersListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.numberOfItems()
@@ -115,6 +128,17 @@ extension OrdersListViewController: UITableViewDataSource {
     }
 }
 
+// MARK: UITableViewDelegate
 extension OrdersListViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        viewModel.didSelectOrder(at: indexPath.row)
+    }
+}
+
+extension OrdersListViewController: OrderDetailsViewModelDelegate {
+    func didUpdateOrder(order: Order) {
+        viewModel.didUpdateOrder(order: order)
+        tableView.reloadData()
+    }
 }

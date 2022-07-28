@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F183A4028926FD30071D31B /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F183A3F28926FD30071D31B /* Customer.swift */; };
+		1F183A44289270E70071D31B /* CustomersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F183A43289270E70071D31B /* CustomersService.swift */; };
+		1F183A47289275060071D31B /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F183A46289275060071D31B /* LocationService.swift */; };
+		1F183A4B28928D8B0071D31B /* MockLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F183A4A28928D8B0071D31B /* MockLocationManager.swift */; };
+		1F183A4E28928E390071D31B /* OrderDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F183A4D28928E390071D31B /* OrderDetailsViewModelTests.swift */; };
+		1F183A5128928EB80071D31B /* CustomersServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F183A5028928EB80071D31B /* CustomersServiceMock.swift */; };
+		1F183A5328928F280071D31B /* OrderDetailsViewModelDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F183A5228928F280071D31B /* OrderDetailsViewModelDelegateMock.swift */; };
+		1F183A552892A2A80071D31B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F183A542892A2A80071D31B /* LocationManager.swift */; };
 		1F5246EA288FEFF70092DCB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5246E9288FEFF70092DCB6 /* AppDelegate.swift */; };
 		1F5246EC288FEFF70092DCB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5246EB288FEFF70092DCB6 /* SceneDelegate.swift */; };
 		1F5246EE288FEFF70092DCB6 /* OrdersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5246ED288FEFF70092DCB6 /* OrdersListViewController.swift */; };
@@ -30,6 +38,9 @@
 		1FDC620E289168EF00074E55 /* OrdersListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDC620D289168EF00074E55 /* OrdersListViewModelTests.swift */; };
 		1FDC62112891690B00074E55 /* OrdersServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDC62102891690B00074E55 /* OrdersServiceMock.swift */; };
 		1FDC621528916E5700074E55 /* OrderTableViewCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDC621428916E5700074E55 /* OrderTableViewCellViewModelTests.swift */; };
+		1FDC6218289172EA00074E55 /* OrderDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDC6217289172EA00074E55 /* OrderDetailsViewController.swift */; };
+		1FDC621A289172F400074E55 /* OrderDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDC6219289172F400074E55 /* OrderDetailsViewModel.swift */; };
+		1FDC621C2891B35000074E55 /* OrderStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDC621B2891B35000074E55 /* OrderStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +54,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F183A3F28926FD30071D31B /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		1F183A43289270E70071D31B /* CustomersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomersService.swift; sourceTree = "<group>"; };
+		1F183A46289275060071D31B /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		1F183A4828927E410071D31B /* CurrentLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CurrentLocation.gpx; sourceTree = "<group>"; };
+		1F183A4A28928D8B0071D31B /* MockLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationManager.swift; sourceTree = "<group>"; };
+		1F183A4D28928E390071D31B /* OrderDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		1F183A5028928EB80071D31B /* CustomersServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomersServiceMock.swift; sourceTree = "<group>"; };
+		1F183A5228928F280071D31B /* OrderDetailsViewModelDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsViewModelDelegateMock.swift; sourceTree = "<group>"; };
+		1F183A542892A2A80071D31B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		1F5246E6288FEFF70092DCB6 /* FlowerPower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowerPower.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5246E9288FEFF70092DCB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F5246EB288FEFF70092DCB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +88,9 @@
 		1FDC620D289168EF00074E55 /* OrdersListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersListViewModelTests.swift; sourceTree = "<group>"; };
 		1FDC62102891690B00074E55 /* OrdersServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersServiceMock.swift; sourceTree = "<group>"; };
 		1FDC621428916E5700074E55 /* OrderTableViewCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCellViewModelTests.swift; sourceTree = "<group>"; };
+		1FDC6217289172EA00074E55 /* OrderDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsViewController.swift; sourceTree = "<group>"; };
+		1FDC6219289172F400074E55 /* OrderDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailsViewModel.swift; sourceTree = "<group>"; };
+		1FDC621B2891B35000074E55 /* OrderStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +111,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F183A45289274F90071D31B /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				1F183A46289275060071D31B /* LocationService.swift */,
+				1F183A542892A2A80071D31B /* LocationManager.swift */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
+		1F183A4C28928E2B0071D31B /* OrderDetails */ = {
+			isa = PBXGroup;
+			children = (
+				1F183A4F28928E720071D31B /* Mock */,
+				1F183A4D28928E390071D31B /* OrderDetailsViewModelTests.swift */,
+			);
+			path = OrderDetails;
+			sourceTree = "<group>";
+		};
+		1F183A4F28928E720071D31B /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				1F183A4A28928D8B0071D31B /* MockLocationManager.swift */,
+				1F183A5028928EB80071D31B /* CustomersServiceMock.swift */,
+				1F183A5228928F280071D31B /* OrderDetailsViewModelDelegateMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		1F5246DD288FEFF70092DCB6 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +170,7 @@
 				1F5246F2288FEFFC0092DCB6 /* Assets.xcassets */,
 				1F5246F4288FEFFC0092DCB6 /* LaunchScreen.storyboard */,
 				1F5246F7288FEFFC0092DCB6 /* Info.plist */,
+				1F183A4828927E410071D31B /* CurrentLocation.gpx */,
 			);
 			path = FlowerPower;
 			sourceTree = "<group>";
@@ -126,6 +178,7 @@
 		1F5246FF288FEFFC0092DCB6 /* FlowerPowerTests */ = {
 			isa = PBXGroup;
 			children = (
+				1F183A4C28928E2B0071D31B /* OrderDetails */,
 				1FDC620C289168D800074E55 /* OrdersScreen */,
 				1FDC6204289164CF00074E55 /* Requests */,
 				1FDC6200289163F900074E55 /* Cache */,
@@ -146,6 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				1F52471C288FF7BC0092DCB6 /* Order.swift */,
+				1FDC621B2891B35000074E55 /* OrderStatus.swift */,
+				1F183A3F28926FD30071D31B /* Customer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -157,6 +212,7 @@
 				1F524721288FFF9B0092DCB6 /* OrdersService.swift */,
 				1FDC620A289165D500074E55 /* ImageRequestService.swift */,
 				1F52472D28901B7C0092DCB6 /* ImageDownloader.swift */,
+				1F183A43289270E70071D31B /* CustomersService.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -164,6 +220,7 @@
 		1F524723289000F20092DCB6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1FDC6216289172CE00074E55 /* DetailScreen */,
 				1F524724289001040092DCB6 /* MainScreen */,
 			);
 			path = UI;
@@ -191,6 +248,7 @@
 		1F52472F28901D0F0092DCB6 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				1F183A45289274F90071D31B /* Location */,
 				1F52473028901D150092DCB6 /* Image */,
 			);
 			path = Helpers;
@@ -253,6 +311,15 @@
 				1FDC62102891690B00074E55 /* OrdersServiceMock.swift */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		1FDC6216289172CE00074E55 /* DetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				1FDC6217289172EA00074E55 /* OrderDetailsViewController.swift */,
+				1FDC6219289172F400074E55 /* OrderDetailsViewModel.swift */,
+			);
+			path = DetailScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,18 +424,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F5246EE288FEFF70092DCB6 /* OrdersListViewController.swift in Sources */,
+				1F183A44289270E70071D31B /* CustomersService.swift in Sources */,
 				1F5246EA288FEFF70092DCB6 /* AppDelegate.swift in Sources */,
 				1F524729289007400092DCB6 /* OrderTableViewCell.swift in Sources */,
 				1FDC620B289165D500074E55 /* ImageRequestService.swift in Sources */,
+				1FDC6218289172EA00074E55 /* OrderDetailsViewController.swift in Sources */,
 				1F524722288FFF9B0092DCB6 /* OrdersService.swift in Sources */,
 				1F52472C289009F40092DCB6 /* OrderTableViewCellViewModel.swift in Sources */,
 				1F52473228901D320092DCB6 /* RandomImageProvider.swift in Sources */,
 				1FBAA244289026BE0097CACA /* ImageCache.swift in Sources */,
 				1F524726289001300092DCB6 /* OrdersListViewModel.swift in Sources */,
 				1F52472E28901B7C0092DCB6 /* ImageDownloader.swift in Sources */,
+				1F183A552892A2A80071D31B /* LocationManager.swift in Sources */,
+				1F183A47289275060071D31B /* LocationService.swift in Sources */,
+				1F183A4028926FD30071D31B /* Customer.swift in Sources */,
 				1F52471D288FF7BC0092DCB6 /* Order.swift in Sources */,
+				1FDC621C2891B35000074E55 /* OrderStatus.swift in Sources */,
 				1F5246EC288FEFF70092DCB6 /* SceneDelegate.swift in Sources */,
 				1F52471F288FFAC00092DCB6 /* APIRequest.swift in Sources */,
+				1FDC621A289172F400074E55 /* OrderDetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,10 +452,14 @@
 			files = (
 				1FDC620E289168EF00074E55 /* OrdersListViewModelTests.swift in Sources */,
 				1FDC62112891690B00074E55 /* OrdersServiceMock.swift in Sources */,
+				1F183A4B28928D8B0071D31B /* MockLocationManager.swift in Sources */,
 				1FDC62092891651B00074E55 /* ImageRequesterMock.swift in Sources */,
 				1FDC62022891641400074E55 /* ImageCacheTests.swift in Sources */,
 				1FDC62032891647500074E55 /* RandomImageProvider.swift in Sources */,
 				1FDC6207289164F400074E55 /* ImageDownloaderTests.swift in Sources */,
+				1F183A5128928EB80071D31B /* CustomersServiceMock.swift in Sources */,
+				1F183A4E28928E390071D31B /* OrderDetailsViewModelTests.swift in Sources */,
+				1F183A5328928F280071D31B /* OrderDetailsViewModelDelegateMock.swift in Sources */,
 				1FDC621528916E5700074E55 /* OrderTableViewCellViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

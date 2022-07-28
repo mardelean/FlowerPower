@@ -64,4 +64,32 @@ class OrdersListViewModelTests: XCTestCase {
             XCTAssertNotNil(image)
         }
     }
+    
+    func testDidSelectOrder() {
+        let imageDownloader = ImageDownloader(imageRequester: ImageRequesterMock())
+        let viewModel = OrdersListViewModel(ordersService: OrdersServiceMock(), imageDownloader: imageDownloader)
+        let expectation = XCTestExpectation(description: "wait for show order to be called")
+        viewModel.onShowOrderDetails = { selectedOrder in
+            XCTAssertEqual(selectedOrder.id, Order.mock().id)
+            expectation.fulfill()
+        }
+        viewModel.startFetchingOrders()
+        viewModel.didSelectOrder(at: 0)
+        wait(for: [expectation], timeout: 10)
+    }
+    
+    func testDidUpdateOrder() {
+        let originalOrder = Order.mock()
+        let imageDownloader = ImageDownloader(imageRequester: ImageRequesterMock())
+        let viewModel = OrdersListViewModel(ordersService: OrdersServiceMock(), imageDownloader: imageDownloader)
+        viewModel.startFetchingOrders()
+        viewModel.didUpdateOrder(order: Order(id: originalOrder.id,
+                                              description: originalOrder.id,
+                                              price: originalOrder.price,
+                                              customerId: originalOrder.customerId,
+                                              imageUrl: originalOrder.imageUrl,
+                                              status: .pending))
+        let updatedOrder = viewModel.order(at: 0)
+        XCTAssertEqual(updatedOrder?.status, .pending)
+    }
 }
